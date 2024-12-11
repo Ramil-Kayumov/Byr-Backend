@@ -1,0 +1,28 @@
+Вкладка юзер
+CREATE (POST REQUEST)
+
+http://localhost:3013/user/create
+{
+    "username": "Рамиль",
+    "email": "asf@mail.ru",
+    "date": "20.12.2024",
+    "telephone": "+12345678912",
+    "password": "p1234567",
+}
+LOGIN(POST REQUEST)
+
+http://localhost:3013/user/login
+{ "email":"asf@mail.ru",
+    "password":"p1234567" }
+GETALL (GET REQUEST)
+
+http://localhost:3013/user/getAll
+GetByUsername(GET REQUEST)
+
+http://localhost:3013/user/getByUsername/Рамиль
+UPDATE(PATH REQUEST)
+
+http://localhost:3013/user/update/(ID)
+{"username": "РамильЬЬ",}
+DELETE(DELETE REQUEST)
+http://localhost:3013/user/delete/id
